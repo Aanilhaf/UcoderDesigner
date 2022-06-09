@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <title>Ucoder - Programmer</title>
+  <style>
+    .my-4 {
+      margin-top:
+        6.5rem !important;
+    }
+
+    .card {
+      background-color: rgb(92, 91, 92);
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ucoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="#">Create Page</a></li>
+              <li><a class="dropdown-item" href="#">Web development</a></li>
+              <!-- aik dropdown divider ke naam se aik li yah div daal sakte  hain -->
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Support</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Write for us</a>
+              </li>
+            </ul>
+          </li>
+          <img src="h.jpeg" alt="mdo" width="32" height="32" class="rounded-circle" />
+          </a>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-danger" type="submit">
+            Search
+          </button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+          <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container ">
+    <div class="col-md-8 col-lg-12 vstack my-4 ">
+      <!-- Create a page START -->
+      <div class="card">
+        <!-- Title START -->
+        <div class="card-header border-0 pb-0">
+          <h1 class="h4 card-title mb-0">Create a page</h1>
+        </div>
+        <!-- Title END -->
+        <!-- Create a page form START -->
+        <div class="card-body">
+          <form class="row g-3">
+            <!-- Page information -->
+            <div class="col-12">
+              <label class="form-label">Page name</label>
+              <input type="text" class="form-control" placeholder="Page name (Required)">
+              <small>Name that describes what the page is about.</small>
+            </div>
+            <!-- Display name -->
+            <div class="col-sm-6 col-lg-4">
+              <label class="form-label">Display name</label>
+              <input type="text" class="form-control" placeholder="Display name (Required)">
+            </div>
+            <!-- Email -->
+            <div class="col-sm-6 col-lg-8">
+              <label class="form-label">Email</label>
+              <input type="text" class="form-control" placeholder="Email (Required)">
+            </div>
+            <!-- Category -->
+            <!-- <div class="col-sm-6 col-lg-4">
+              <label class="form-label">Category (required)</label>
+              <div class="choices" data-type="select-one" tabindex="0" role="combobox" aria-autocomplete="list"
+                aria-haspopup="true" aria-expanded="false">
+                <div class="choices__inner"><select class="form-select js-choice choices__input" hidden="" tabindex="-1"
+                    data-choice="active">
+                    <option value="PV">Comedy</option>
+                  </select>
+                  <div class="choices__list choices__list--single">
+                    <div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="PV"
+                      data-custom-properties="null" aria-selected="true">Comedy</div>
+                  </div>
+                </div>
+                <div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text"
+                    class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off"
+                    spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="false" placeholder="">
+                  <div class="choices__list" role="listbox">
+                    <div id="choices--34ee-item-choice-1"
+                      class="choices__item choices__item--choice is-selected choices__item--selectable is-highlighted"
+                      role="option" data-choice="" data-id="1" data-value="PV" data-select-text="Press to select"
+                      data-choice-selectable="" aria-selected="true">Comedy</div>
+                    <div id="choices--34ee-item-choice-2"
+                      class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice=""
+                      data-id="2" data-value="PV" data-select-text="Press to select" data-choice-selectable="">Education
+                    </div>
+                    <div id="choices--34ee-item-choice-3"
+                      class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice=""
+                      data-id="3" data-value="PV" data-select-text="Press to select" data-choice-selectable="">
+                      Entertainment</div>
+                    <div id="choices--34ee-item-choice-4"
+                      class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice=""
+                      data-id="4" data-value="PV" data-select-text="Press to select" data-choice-selectable="">Hotel
+                    </div>
+                    <div id="choices--34ee-item-choice-5"
+                      class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice=""
+                      data-id="5" data-value="PB" data-select-text="Press to select" data-choice-selectable="">
+                      Technology</div>
+                    <div id="choices--34ee-item-choice-6"
+                      class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice=""
+                      data-id="6" data-value="PV" data-select-text="Press to select" data-choice-selectable="">Travel
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- Category -->
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Category Required</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Comedy</option>
+                <option>Education</option>
+                <option>Entertainment</option>
+                <option>Hotel</option>
+                <option>Technology</option>
+                <option>Travel</option>
+              </select>
+            </div>
+            <!-- Website URL -->
+            <div class="col-sm-6">
+              <label class="form-label">Website URL</label>
+              <input type="text" class="form-control" placeholder="https://www.webestica.com">
+            </div>
+            <!-- Phone number -->
+            <div class="col-lg-6">
+              <label class="form-label">Phone number</label>
+              <input type="text" class="form-control" placeholder="Phone number (Required)">
+            </div>
+            <!-- Page information -->
+            <div class="col-12">
+              <label class="form-label">About page</label>
+              <textarea class="form-control" rows="3" placeholder="Description (Required)"></textarea>
+              <small>Character limit: 300</small>
+            </div>
+
+            <!-- Divider -->
+            <hr>
+
+            <!-- Social Links START -->
+            <div class="col-12">
+              <h5 class="card-title mb-0">Social Links</h5>
+            </div>
+            <!-- Facebook -->
+            <div class="col-sm-6">
+              <label class="form-label">Facebook</label>
+              <div class="input-group">
+                <span class="input-group-text border-0"> <i class="bi bi-facebook text-facebook"></i> </span>
+                <input type="text" class="form-control" placeholder="https://www.facebook.com">
+              </div>
+            </div>
+            <!-- Twitter -->
+            <div class="col-sm-6">
+              <label class="form-label">Twitter</label>
+              <div class="input-group">
+                <span class="input-group-text border-0"> <i class="bi bi-twitter text-twitter"></i> </span>
+                <input type="text" class="form-control" placeholder="https://www.twitter.com">
+              </div>
+            </div>
+            <!-- Instagram -->
+            <div class="col-sm-6">
+              <label class="form-label">Instagram</label>
+              <div class="input-group">
+                <span class="input-group-text border-0"> <i class="bi bi-instagram text-instagram"></i> </span>
+                <input type="text" class="form-control" placeholder="https://www.instagram.com">
+              </div>
+            </div>
+            <!-- Pinterest -->
+            <div class="col-sm-6">
+              <label class="form-label">Pinterest</label>
+              <div class="input-group">
+                <span class="input-group-text border-0"> <i class="bi bi-pinterest text-pinterest"></i> </span>
+                <input type="text" class="form-control" placeholder="https://www.pinterest.com">
+              </div>
+            </div>
+            <!-- Button  -->
+            <div class="col-12 text-end">
+              <button type="submit" class="btn btn-primary mb-0">Create a page</button>
+            </div>
+          </form>
+        </div>
+        <!-- Create a page form END -->
+      </div>
+      <!-- Create a page END -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/boot           strap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script> -->
+  <!-- for modals -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
